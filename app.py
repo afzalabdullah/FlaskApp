@@ -20,7 +20,7 @@ def submit():
         data = {
             'name': request.form['name'],
             'email': request.form['email'],
-            'message': request.form['message']
+            'Student_id': request.form['student_id']
         }
         collection.insert_one(data)
         return 'Data inserted successfully.'
